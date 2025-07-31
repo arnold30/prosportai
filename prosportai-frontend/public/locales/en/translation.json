@@ -1,0 +1,294 @@
+
+{
+  "hero": {
+    "title": "Maximize Sporting Potential with <1>Artificial Intelligence</1>",
+    "subtitle": "Leading platform for coaches, clubs, and athletes looking to optimize performance and sports strategy through advanced AI.",
+    "cta_main": "Start for Free",
+    "cta_secondary": "Request Demo",
+    "feature_ia_plans": "AI-Powered Plans",
+    "feature_predictive_analysis": "Predictive Analysis",
+    "feature_team_management": "Team Management",
+    "feature_detailed_reports": "Detailed Reports",
+    "feature_continuous_optimization": "Continuous Optimization",
+    "feature_global_reach": "Global Reach",
+    "performance_boost": "+25% Performance",
+    "real_time_optimization": "Real-Time Optimization"
+  },
+  "header": {
+    "coaches": "Coaches",
+    "clubs": "Clubs",
+    "athletes": "Athletes",
+    "ai_assistant_nav": "AI Assistant",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "documentation_desc": "Detailed guides and API references.",
+    "tutorials": "Tutorials",
+    "tutorials_desc": "Learn to use ProSportAi step by step.",
+    "blog": "Blog",
+    "blog_desc": "Articles on AI in sports.",
+    "community": "Community",
+    "community_desc": "Connect with other users.",
+    "language_selector_aria": "Select language",
+    "login": "Log In",
+    "register": "Sign Up",
+    "my_account": "My Account",
+    "my_panel": "My Dashboard",
+    "training_templates": "Training Templates",
+    "edit_profile": "Edit Profile",
+    "logout": "Log Out"
+  },
+  "footer": {
+    "solutions_title": "Solutions",
+    "for_coaches": "For Coaches",
+    "for_clubs": "For Clubs",
+    "for_athletes": "For Athletes",
+    "for_federations": "For Federations",
+    "plans_pricing": "Plans & Pricing",
+    "request_demo": "Request Demo",
+    "resources_title": "Resources",
+    "ai_sports_blog": "AI Sports Blog",
+    "success_stories": "Success Stories",
+    "api_documentation": "API Documentation",
+    "video_tutorials": "Tutorials",
+    "community": "ProSportAi Community",
+    "faq": "FAQ",
+    "company_title": "Company",
+    "about_us": "About ProSportAi",
+    "contact_support": "Contact & Support",
+    "careers": "Careers",
+    "press_room": "Press Room",
+    "partner_program": "Partner Program",
+    "security_trust": "Security & Trust",
+    "tagline": "Transforming sports training with artificial intelligence. We empower coaches, clubs, and athletes to achieve their maximum performance internationally.",
+    "newsletter_placeholder": "Your email for news...",
+    "newsletter_button": "Subscribe",
+    "newsletter_info": "Get the latest news and tips from ProSportAi.",
+    "all_rights_reserved": "All rights reserved",
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy",
+    "cookie_policy": "Cookie Policy",
+    "sitemap": "Sitemap"
+  },
+  "tutorial": {
+    "main_title": "Welcome to the ProSportAi Tutorial",
+    "main_subtitle": "Discover how to navigate and use all the powerful tools ProSportAi has to offer. Let's get started!",
+    "navigation": {
+      "title": "Main Navigation",
+      "description": "Understand how to move around the platform.",
+      "header": {
+        "title": "Header",
+        "text": "At the top, you'll find the logo, links to key sections (Coaches, Clubs, Athletes, AI Assistant), Resources, and the user/language menu."
+      },
+      "language": {
+        "title": "Language Switcher",
+        "text": "Select your preferred language using the globe icon in the header."
+      },
+      "user_menu": {
+        "title": "User Menu",
+        "text": "If logged in, access your dashboard, profile, or log out here. If not, you'll see options to Log In or Sign Up."
+      },
+      "footer": {
+        "title": "Footer",
+        "text": "Contains useful links to solutions, resources, company information, legal terms, and social media."
+      }
+    },
+    "dashboard": {
+      "title": "User Dashboard",
+      "description": "Your personalized control center.",
+      "overview": {
+        "title": "Overview",
+        "text": "View a summary of your activity, training plan, key stats, and important notifications."
+      },
+      "training": {
+        "title": "Training",
+        "text": "Access your assigned training plans or explore available templates. Click to see details."
+      },
+      "profile": {
+        "title": "Profile",
+        "text": "Update your personal information, such as name and email."
+      },
+      "settings": {
+        "title": "Settings",
+        "text": "Configure security options (like 2FA) and manage integrations (coming soon)."
+      }
+    },
+    "templates": {
+      "title": "Template Management (Coaches/Admins)",
+      "description": "Create and manage smart training templates.",
+      "access": {
+        "title": "Access",
+        "text": "Coaches and admins can access 'Training Templates' from the user menu in the header."
+      },
+      "create": {
+        "title": "Create Templates",
+        "text": "Use the form to define name, description, objective, level, duration, and detailed structure by days and exercises."
+      },
+      "view_edit": {
+        "title": "View & Edit",
+        "text": "Click on a template to see its details. Use icons to edit or download the template in JSON format."
+      },
+      "delete": {
+        "title": "Delete",
+        "text": "Remove templates you no longer need using the trash icon."
+      }
+    },
+    "auth": {
+      "title": "Access & Registration",
+      "description": "How to join and access ProSportAi.",
+      "register": {
+        "title": "Sign Up",
+        "text": "Create your account by selecting your role (Athlete, Coach, Club) and completing the form."
+      },
+      "login": {
+        "title": "Log In",
+        "text": "Access with your email and password. If 2FA is enabled, you'll be prompted for the code."
+      },
+      "logout": {
+        "title": "Log Out",
+        "text": "Securely disconnect from the user menu."
+      }
+    },
+    "support": {
+      "title": "Help & Support",
+      "description": "We're here to help you.",
+      "faq": {
+        "title": "Frequently Asked Questions (FAQ)",
+        "text": "Find quick answers to common questions in our FAQ section in the footer."
+      },
+      "video": {
+        "title": "Video Tutorials",
+        "text": "Explore our videos for detailed visual guides on specific features."
+      },
+      "contact": {
+        "title": "Direct Contact",
+        "text": "If you need personalized assistance, don't hesitate to contact our support team via the link in the footer."
+      }
+    },
+    "ready_to_start": "Ready to take your training to the next level?",
+    "go_to_dashboard": "Go to my Dashboard"
+  },
+  "blog": {
+    "locale": "en-US",
+    "main_title": "ProSportAi Blog",
+    "main_subtitle": "Discover the latest news, analysis, and tips on AI in sports, performance, and team management.",
+    "search_placeholder": "Search articles...",
+    "filter_category": "Filter by category",
+    "read_more": "Read More",
+    "previous_page": "Previous",
+    "next_page": "Next",
+    "no_articles_found_title": "No Articles Found",
+    "no_articles_criteria": "No articles match your search or filter criteria. Try different terms.",
+    "no_articles_yet": "We haven't published any articles yet. Check back soon!",
+    "authors": {
+      "equipo_prosportai": "ProSportAi Team",
+      "dr_elena_gomez": "Dr. Elena Gomez",
+      "fisio_marcos_rey": "Marcos Rey (Physiotherapist)",
+      "coach_laura_diaz": "Coach Laura Diaz"
+    },
+    "categories": {
+      "all": "All Categories",
+      "ia_deporte": "AI in Sports",
+      "nutricion": "Nutrition & Dietetics",
+      "salud_bienestar": "Health & Wellness",
+      "gestion_equipos": "Team Management"
+    },
+    "tags": {
+      "ia": "AI",
+      "rendimiento": "Performance",
+      "tecnologia": "Technology",
+      "nutricion": "Nutrition",
+      "atletas": "Athletes",
+      "salud": "Health",
+      "prevencion_lesiones": "Injury Prevention",
+      "fisioterapia": "Physiotherapy",
+      "entrenadores": "Coaches",
+      "gestion": "Management",
+      "software": "Software"
+    },
+    "article1": {
+      "title": "How AI is Revolutionizing Modern Sports Training",
+      "summary": "Artificial intelligence is no longer science fiction. Discover how advanced algorithms are personalizing routines, preventing injuries, and optimizing the performance of elite and amateur athletes.",
+      "content": "Full content of article 1..."
+    },
+    "article2": {
+      "title": "Personalized Nutrition for Athletes: The Key Role of AI",
+      "summary": "Every athlete is unique, and their nutrition should be too. We explore how AI analyzes biometric data to create meal plans that maximize energy and recovery.",
+      "content": "Full content of article 2..."
+    },
+    "article3": {
+      "title": "Injury Prevention: The Smart Ally Every Athlete Needs",
+      "summary": "Injuries are the great enemy of progress. AI, through movement analysis and historical data, is becoming a fundamental tool to identify risks and act before they occur.",
+      "content": "Full content of article 3..."
+    },
+    "article4": {
+      "title": "Efficient Team Management in the Digital Age: Tools and Strategies",
+      "summary": "Coordinating a sports team goes beyond on-field tactics. Discover how digital platforms and AI facilitate communication, planning, and tracking team progress.",
+      "content": "Full content of article 4..."
+    }
+  },
+  "chat_assistant": {
+    "title": "ProSportAi AI Assistant",
+    "input_placeholder": "Type your question or query...",
+    "send_button_aria": "Send message",
+    "error_api_key_missing_title": "Configuration Error",
+    "error_api_key_missing_desc": "OpenAI API key is not configured. Please add it to your environment variables (VITE_OPENAI_API_KEY).",
+    "error_api_key_missing": "OpenAI API key is not configured. The assistant will not function until it is set up.",
+    "api_key_warning_short": "Limited functionality: API Key not set.",
+    "error_api_call_title": "AI Communication Error",
+    "error_api_call_desc": "Could not get response from assistant. Please try again. Detail:",
+    "error_api_response_placeholder": "I'm sorry, I couldn't process your request at this moment. Please try again.",
+    "initial_system_message_prosportai": "You are ProSportAi Assistant, an expert in sports performance optimization, data analysis, and training strategies. Help the user with their queries related to sports, using the ProSportAi platform, and how AI can improve their performance or team management. Be concise, friendly, and professional."
+  },
+  "chat_assistant_page": {
+    "main_title": "Your AI Sports Assistant",
+    "main_subtitle": "Ask questions, get advice on training, nutrition, strategies, or how to use ProSportAi. I'm here to help you reach your goals!",
+    "disclaimer": "This AI assistant provides information and suggestions. It does not replace professional advice from coaches, doctors, or specialists. Responses are AI-generated and may require validation."
+  },
+  "privacy_policy": {
+    "locale": "en-US",
+    "main_title": "Privacy Policy",
+    "main_subtitle": "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+    "document_title": "ProSportAi Privacy Policy",
+    "last_updated": "Last updated: {{date}}",
+    "introduction": {
+      "title": "1. Introduction",
+      "content": "Welcome to ProSportAi. We are committed to protecting your privacy and handling your personal data in a transparent and secure manner. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information through our services."
+    },
+    "data_collection": {
+      "title": "2. Information We Collect",
+      "content": "We collect information you provide directly to us, such as when you create an account (name, email, role), information about your use of our services (training data, interactions), and technical information (IP address, browser type, cookie data)."
+    },
+    "data_use": {
+      "title": "3. How We Use Your Information",
+      "content": "We use your information to: Provide, maintain, and improve our services. Personalize your experience. Communicate with you about your account or our services. Analyze service usage to develop new features. Comply with legal obligations and protect our rights."
+    },
+    "data_sharing": {
+      "title": "4. How We Share Your Information",
+      "content": "We do not sell your personal information. We may share your information with: Service providers who help us operate (cloud storage, analytics). Legal authorities if required by law or to protect our rights. In the event of a business transaction like a merger or acquisition (with due protections)."
+    },
+    "data_security": {
+      "title": "5. Security of Your Data",
+      "content": "We implement reasonable technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no system is 100% secure."
+    },
+    "cookies": {
+      "title": "6. Cookies and Similar Technologies",
+      "content": "We use cookies and similar technologies to enhance your experience, analyze site usage, and for marketing purposes. You can control the use of cookies through your browser settings. See our Cookie Policy for more details."
+    },
+    "user_rights": {
+      "title": "7. Your Rights",
+      "content": "Depending on your jurisdiction, you may have rights over your personal data, such as the right to access, correct, delete, restrict processing, or request data portability. To exercise these rights, please contact us."
+    },
+    "childrens_privacy": {
+      "title": "8. Children's Privacy",
+      "content": "Our services are not directed to children under 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children without parental consent."
+    },
+    "changes": {
+      "title": "9. Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on our website and updating the 'Last updated' date."
+    },
+    "contact": {
+      "title": "10. Contact Us",
+      "content": "If you have questions about this Privacy Policy or our data practices, please contact us at: info@prosportai.com or through our contact page."
+    }
+  }
+}
