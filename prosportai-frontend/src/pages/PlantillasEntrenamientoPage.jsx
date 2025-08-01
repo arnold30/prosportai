@@ -128,7 +128,7 @@ const PlantillasEntrenamientoPage = () => {
 
     try {
       // Llama a tu backend, no a OpenAI directo
-      const response = await fetch('http://localhost:4000/api/generar-plantilla', {
+      const response = await fetch('https://prosportai-production.up.railway.app/api/generar-plantilla', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -192,7 +192,7 @@ export default defineConfig({
 		},
 		allowedHosts: true,
 		proxy: {
-			'/api': 'http://localhost:4000',
+			'/api': 'https://prosportai-production.up.railway.app',
 		},
 	},
 	resolve: {

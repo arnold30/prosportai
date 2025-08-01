@@ -1,80 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { Search, LayoutGrid, Users, Copy, Eye } from 'lucide-react';
+import { Search, LayoutGrid, Users, Eye } from 'lucide-react';
 import { useToast } from "@/components/ui/use-toast";
 import { useAuth } from '@/contexts/AuthContext';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import TemplateCard from '@/components/training-templates/TemplateCard';
 import TemplateDetailView from '@/components/training-templates/TemplateDetailView';
 
-const communityTemplatesData = [
-  {
-    id: 'community-strength-beginner',
-    name: 'Iniciación a la Fuerza (Comunidad)',
-    description: 'Una rutina de cuerpo completo ideal para quienes comienzan a entrenar la fuerza. Enfocada en movimientos básicos y técnica.',
-    targetObjective: 'Fuerza',
-    level: 'Principiante',
-    durationDays: '84', 
-    daysPerWeek: '3',
-    isCommunity: true,
-    structure: [
-      { name: 'Día 1: Empuje A', exercises: [
-        { exerciseId: 'ex2', name: 'Sentadilla con Barra', sets: '3', reps: '8-12', rest: '60-90s' }, 
-        { exerciseId: 'ex1', name: 'Press de Banca', sets: '3', reps: '8-12', rest: '60-90s' },
-        { exerciseId: 'ex8', name: 'Press Militar', sets: '3', reps: '10-15', rest: '60s' },
-        { exerciseId: 'ex5', name: 'Flexiones', sets: '3', reps: 'Al fallo', rest: '60s' },
-      ]},
-      { name: 'Día 2: Tirón A', exercises: [
-        { exerciseId: 'ex3', name: 'Peso Muerto', sets: '1', reps: '5', rest: '120-180s' }, 
-        { exerciseId: 'ex4', name: 'Dominadas', sets: '3', reps: 'Asistidas o negativas al fallo', rest: '90s' },
-        { exerciseId: 'ex7', name: 'Curl de Bíceps', sets: '3', reps: '10-15', rest: '60s' },
-        { exerciseId: 'ex6', name: 'Plancha Abdominal', sets: '3', reps: '30-60s', rest: '45s' },
-      ]},
-      { name: 'Día 3: Empuje B', exercises: [
-        { exerciseId: 'ex2', name: 'Sentadilla con Barra', sets: '3', reps: '8-12', rest: '60-90s', notes: "Intenta progresar en peso o reps." }, 
-        { exerciseId: 'ex1', name: 'Press de Banca', sets: '3', reps: '8-12', rest: '60-90s' },
-        { exerciseId: 'ex8', name: 'Press Militar', sets: '3', reps: '10-15', rest: '60s' },
-        { exerciseId: 'ex5', name: 'Flexiones', sets: '3', reps: 'Al fallo', rest: '60s' },
-      ]},
-    ]
-  },
-  {
-    id: 'community-hypertrophy-intermediate',
-    name: 'Hipertrofia Clásica (Comunidad)',
-    description: 'Rutina dividida para intermedios buscando maximizar la ganancia muscular. Enfoque en volumen y conexión mente-músculo.',
-    targetObjective: 'Hipertrofia',
-    level: 'Intermedio',
-    durationDays: '90', 
-    daysPerWeek: '4',
-    isCommunity: true,
-    structure: [
-      { name: 'Día 1: Pecho y Tríceps', exercises: [
-        { exerciseId: 'ex1', name: 'Press de Banca', sets: '4', reps: '8-10', rest: '90s' },
-        { exerciseId: 'ex5', name: "Flexiones Inclinadas", sets: '3', reps: '10-12', rest: '60s' }, 
-        { exerciseId: 'ex8', name: "Press Francés", sets: '3', reps: '10-12', rest: '60s' }, 
-      ]},
-      { name: 'Día 2: Espalda y Bíceps', exercises: [
-        { exerciseId: 'ex4', name: 'Dominadas', sets: '4', reps: '6-10', rest: '90s' },
-        { exerciseId: 'ex3', name: "Remo con Barra", sets: '3', reps: '8-10', rest: '75s' }, 
-        { exerciseId: 'ex7', name: 'Curl de Bíceps', sets: '3', reps: '10-12', rest: '60s' },
-      ]},
-      { name: 'Día 3: Piernas', exercises: [
-        { exerciseId: 'ex2', name: 'Sentadilla con Barra', sets: '4', reps: '8-10', rest: '90-120s' },
-        { exerciseId: 'ex3', name: "Peso Muerto Rumano", sets: '3', reps: '10-12', rest: '75s' },
-      ]},
-      { name: 'Día 4: Hombros y Trapecios', exercises: [
-        { exerciseId: 'ex8', name: 'Press Militar', sets: '4', reps: '8-10', rest: '75s' },
-      ]},
-    ]
-  }
-];
-
-const STORAGE_KEY_TEMPLATES = 'prosportai_routineTemplates';
-const generateNewId = () => `template-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+// ... communityTemplatesData, STORAGE_KEY_TEMPLATES, generateNewId ...
 
 const CommunityTemplatesPage = () => {
   const { currentUser } = useAuth();
@@ -83,6 +20,11 @@ const CommunityTemplatesPage = () => {
   const [viewingTemplate, setViewingTemplate] = useState(null);
   const [isDetailViewOpen, setIsDetailViewOpen] = useState(false);
   const { toast } = useToast();
+
+  // ======= BLOQUEO DE ACCESO =======
+  if (!currentUser) return <Navigate to="/login" replace />;
+  if (!currentUser.membresiaActiva) return <Navigate to="/mi-cuenta" replace />;
+  // Cambia 'membresiaActiva' por el campo que uses para controlar la membresía
 
   const handleViewTemplate = (template) => {
     setViewingTemplate(template);
@@ -122,10 +64,10 @@ const CommunityTemplatesPage = () => {
       });
       copiedTemplate.name = `${copiedTemplate.name} (Copia Comunidad)`;
     }
-    
+
     userTemplates.push(copiedTemplate);
     localStorage.setItem(STORAGE_KEY_TEMPLATES, JSON.stringify(userTemplates));
-    
+
     toast({ title: "Plantilla Copiada", description: `"${communityTemplate.name}" ha sido copiada a "Mis Plantillas".` });
   };
 
@@ -143,7 +85,7 @@ const CommunityTemplatesPage = () => {
     toast({ title: "Descarga Iniciada", description: `${filename} se está descargando.` });
   };
 
-  const filteredCommunityTemplates = communityTemplates.filter(temp => 
+  const filteredCommunityTemplates = communityTemplates.filter(temp =>
     temp.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
     temp.description?.toLowerCase().includes(searchTerm.toLowerCase()) ||
     temp.targetObjective?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -154,7 +96,7 @@ const CommunityTemplatesPage = () => {
 
   return (
     <div className="container py-10">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -188,16 +130,16 @@ const CommunityTemplatesPage = () => {
       </div>
 
       {filteredCommunityTemplates.length > 0 ? (
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants} initial="hidden" animate="visible"
         >
           {filteredCommunityTemplates.map((template) => (
-            <TemplateCard 
-              key={template.id} 
+            <TemplateCard
+              key={template.id}
               template={template}
-              onEdit={() => toast({ title: "Acción no permitida", description: "Las plantillas de comunidad no se pueden editar directamente. Cópiala a tus plantillas para modificarla.", variant: "destructive"})}
-              onDelete={() => toast({ title: "Acción no permitida", description: "Las plantillas de comunidad no se pueden eliminar.", variant: "destructive"})}
+              onEdit={() => toast({ title: "Acción no permitida", description: "Las plantillas de comunidad no se pueden editar directamente. Cópiala a tus plantillas para modificarla.", variant: "destructive" })}
+              onDelete={() => toast({ title: "Acción no permitida", description: "Las plantillas de comunidad no se pueden eliminar.", variant: "destructive" })}
               onDownloadJSON={downloadJSON}
               onView={handleViewTemplate}
               isCommunityTemplate={true}
@@ -206,7 +148,7 @@ const CommunityTemplatesPage = () => {
           ))}
         </motion.div>
       ) : (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           className="text-center py-16 bg-muted/30 rounded-lg"
         >

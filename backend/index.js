@@ -59,5 +59,5 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>
-  console.log("🚀 Backend escuchando en http://localhost:" + PORT)
+  console.log("🚀 Backend escuchando en http://0.0.0.0:" + PORT)
 );
